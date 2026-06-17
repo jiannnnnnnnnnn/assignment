@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Station Pick</strong></a>
+									
+								</header>
+
+							<!-- Content -->
+								<!-- Content -->
+									<section>
+										<header class="main">
+											<h1>오레노카츠</h1>
+										</header>
+
+										<span class="image main">
+											<img src="images/오레노카츠.jpg" alt="오레노카츠 이미지" />
+										</span>
+
+										<p>
+											오레노카츠는 성수역 주변에서 즐길 수 있는 일식 맛집으로,
+											두툼한 돈카츠와 바삭한 튀김이 특징인 곳입니다.
+											깔끔한 분위기에서 든든한 일본식 식사를 즐기기 좋습니다.
+										</p>
+
+										<hr class="major" />
+
+										<h2>기본 정보</h2>
+										<p><strong>카테고리</strong> 성수역 · 일식</p>
+										<p><strong>별점</strong> ★★★★☆ 4.5</p>
+										<p><strong>영업시간</strong> 11:30 - 21:00</p>
+										<p><strong>위치</strong> 서울 성동구 성수동 일대</p>
+
+										<ul class="actions">
+											<li><button class="button primary favorite-btn">♡ 찜하기</button></li>
+											
+										</ul>
+
+										<hr class="major" />
+
+										<h2>장소 소개</h2>
+										<p>
+											성수역 근처에서 부담 없이 방문하기 좋은 일식 맛집입니다.
+											바삭한 튀김옷과 두툼한 고기 식감이 어우러져 식사 만족도가 높으며,
+											친구와의 약속이나 가벼운 데이트 코스로도 잘 어울립니다.
+										</p>
+
+										<hr class="major" />
+
+										<h2>한줄 후기</h2>
+										<p>“돈카츠가 바삭하고 양도 넉넉해서 만족스러웠어요.”</p>
+										<p>“성수역 근처에서 점심 먹기 좋은 곳이에요.”</p>
+									</section>
+
+									<script>
+										const buttons = document.querySelectorAll('.favorite-btn');
+
+										buttons.forEach(function(button) {
+											button.addEventListener('click', function() {
+												if (button.textContent === '♡ 찜하기') {
+													button.textContent = '♥ 찜완료';
+												} else {
+													button.textContent = '♡ 찜하기';
+												}
+											});
+										});
+									</script>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">메인 페이지</a></li>
+										<li><a href="station_select.html">역 선택</a></li>
+										<li><a href="all_places.html">전체 장소</a></li>
+
+										<li>
+											<span class="opener">성수역</span>
+											<ul>
+												<li><a href="seongsu_category.html">카테고리 선택</a></li>
+												<li><a href="seongsu_food.html">맛집</a></li>
+												<li><a href="seongsu_play.html">놀거리</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<span class="opener">홍대입구역</span>
+											<ul>
+												<li><a href="hongdae_category.html">카테고리 선택</a></li>
+												<li><a href="hongdae_food.html">맛집</a></li>
+												<li><a href="hongdae_play.html">놀거리</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<span class="opener">결과 페이지</span>
+											<ul>
+												<li><a href="seongsu_korean.html">성수역 · 한식</a></li>
+												<li><a href="seongsu_japanese.html">성수역 · 일식</a></li>
+												<li><a href="seongsu_escape.html">성수역 · 방탈출</a></li>
+												<li><a href="seongsu_shop.html">성수역 · 소품샵</a></li>
+												<li><a href="hongdae_korean.html">홍대입구역 · 한식</a></li>
+												<li><a href="hongdae_japanese.html">홍대입구역 · 일식</a></li>
+												<li><a href="hongdae_escape.html">홍대입구역 · 방탈출</a></li>
+												<li><a href="hongdae_shop.html">홍대입구역 · 소품샵</a></li>
+											</ul>
+										</li>
+
+										<li><a href="place_detail.html">장소 상세</a></li>
+										<li><a href="course.html">추천 코스</a></li>
+										<li><a href="reviews.html">한줄 후기</a></li>
+										<li><a href="favorite.html">즐겨찾기</a></li>
+									</ul>
+								</nav>
+
+							
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

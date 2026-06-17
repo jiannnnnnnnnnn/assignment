@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Station Pick - Course</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.course-title {
+				text-align: center;
+				margin: 3em 0 2em 0;
+			}
+
+			.course-title p {
+				margin-bottom: 0.5em;
+				font-weight: bold;
+				color: #6B7A3D;
+			}
+
+			.course-title h1 {
+				font-size: 2.2em;
+			}
+
+			.course-cards {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 1.2em;
+				margin-bottom: 2em;
+			}
+
+			.course-card {
+				position: relative;
+				height: 320px;
+				border-radius: 14px;
+				overflow: hidden;
+				background-size: cover;
+				background-position: center;
+				color: white;
+			}
+
+			.course-card::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.15));
+			}
+
+			.course-card .text {
+				position: absolute;
+				left: 1.2em;
+				bottom: 1.2em;
+				z-index: 1;
+			}
+
+			.course-card h3 {
+				color: white;
+				margin-bottom: 0.4em;
+			}
+
+			.course-card p {
+				margin: 0;
+				color: #ddd;
+			}
+
+			.more-button {
+				text-align: center;
+				margin-top: 2em;
+			}
+
+			@media screen and (max-width: 980px) {
+				.course-cards {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.course-cards {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+
+		<div id="wrapper">
+
+			<div id="main">
+				<div class="inner">
+
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Station Pick</strong></a>
+						<ul class="icons"></ul>
+					</header>
+
+					<section>
+						<div class="course-title">
+							<p>Station Pick 추천 코스</p>
+							<h1>성수역 감성 코스</h1>
+						</div>
+
+						<div class="course-cards">
+
+							<div class="course-card" style="background-image: url('images/오레노카츠.jpg');">
+								<div class="text">
+									<h3>오레노카츠</h3>
+									<p>성수역 · 일식</p>
+								</div>
+							</div>
+
+							<div class="course-card" style="background-image: url('images/오브젝트.jpeg');">
+								<div class="text">
+									<h3>오브젝트 성수</h3>
+									<p>성수역 · 소품샵</p>
+								</div>
+							</div>
+
+							<div class="course-card" style="background-image: url('images/텅플래닛.jpg');">
+								<div class="text">
+									<h3>텅플래닛</h3>
+									<p>성수역 · 소품샵</p>
+								</div>
+							</div>
+
+							<div class="course-card" style="background-image: url('images/서울숲.webp');">
+								<div class="text">
+									<h3>서울숲</h3>
+									<p>성수역 · 산책</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="more-button">
+							<a href="all_places.html" class="button big">장소 더보기</a>
+						</div>
+
+						<hr class="major" />
+
+						<div class="course-title">
+							<p>홍대입구역 추천 코스</p>
+							<h1>홍대입구역 놀거리 코스</h1>
+						</div>
+
+						<div class="course-cards">
+
+							<div class="course-card" style="background-image: url('images/홍대개미.jpg');">
+								<div class="text">
+									<h3>홍대개미</h3>
+									<p>홍대입구역 · 한식</p>
+								</div>
+							</div>
+
+							<div class="course-card" style="background-image: url('images/비트포비아.jpg');">
+								<div class="text">
+									<h3>비트포비아 홍대점</h3>
+									<p>홍대입구역 · 방탈출</p>
+								</div>
+							</div>
+
+							<div class="course-card" style="background-image: url('images/버터.jpg');">
+								<div class="text">
+									<h3>버터 홍대점</h3>
+									<p>홍대입구역 · 소품샵</p>
+								</div>
+							</div>
+
+							<div class="course-card" style="background-image: url('images/아트박스.jpg');">
+								<div class="text">
+									<h3>아트박스 홍대점</h3>
+									<p>홍대입구역 · 소품샵</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="more-button">
+							<a href="all_places.html" class="button big">장소 더보기</a>
+						</div>
+					</section>
+
+				</div>
+			</div>
+
+			<div id="sidebar">
+				<div class="inner">
+
+					
+
+					<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">메인 페이지</a></li>
+									<li><a href="station_select.html">역 선택</a></li>
+									<li><a href="all_places.html">전체 장소</a></li>
+
+									<li>
+										<span class="opener">성수역</span>
+										<ul>
+											<li><a href="seongsu_category.html">카테고리 선택</a></li>
+											<li><a href="seongsu_food.html">맛집</a></li>
+											<li><a href="seongsu_play.html">놀거리</a></li>
+										</ul>
+									</li>
+
+									<li>
+										<span class="opener">홍대입구역</span>
+										<ul>
+											<li><a href="hongdae_category.html">카테고리 선택</a></li>
+											<li><a href="hongdae_food.html">맛집</a></li>
+											<li><a href="hongdae_play.html">놀거리</a></li>
+										</ul>
+									</li>
+
+									<li>
+										<span class="opener">결과 페이지</span>
+										<ul>
+											<li><a href="seongsu_korean.html">성수역 · 한식</a></li>
+											<li><a href="seongsu_japanese.html">성수역 · 일식</a></li>
+											<li><a href="seongsu_escape.html">성수역 · 방탈출</a></li>
+											<li><a href="seongsu_shop.html">성수역 · 소품샵</a></li>
+											<li><a href="hongdae_korean.html">홍대입구역 · 한식</a></li>
+											<li><a href="hongdae_japanese.html">홍대입구역 · 일식</a></li>
+											<li><a href="hongdae_escape.html">홍대입구역 · 방탈출</a></li>
+											<li><a href="hongdae_shop.html">홍대입구역 · 소품샵</a></li>
+										</ul>
+									</li>
+
+									<li><a href="place_detail.html">장소 상세</a></li>
+									<li><a href="course.html">추천 코스</a></li>
+									<li><a href="reviews.html">한줄 후기</a></li>
+									<li><a href="favorite.html">즐겨찾기</a></li>
+								</ul>
+							</nav>
+
+				</div>
+			</div>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
